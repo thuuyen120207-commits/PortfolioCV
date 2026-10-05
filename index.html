@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Thu Uyên | Starry Night Portfolio</title>
+  <meta name="description" content="Portfolio cá nhân của Nguyễn Thu Uyên - Sinh viên ĐH Ngoại thương mang phong cách Starry Night & Cosmic Artistry">
+
+  <!-- Favicon Star -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23F4A261'><path d='M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'/></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Dynamic Cosmic Canvas (Starry Night Swirls & Floating Stardust) -->
+  <canvas id="cosmic-canvas"></canvas>
+  <div class="vignette-overlay"></div>
+
+  <!-- Content Wrapper -->
+  <div class="content-wrapper">
+
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+      <nav class="cosmic-nav">
+        <a href="#hero" class="brand-link">
+          <svg class="brand-star-icon" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2L14.4 8.6L21.5 9.1L16.2 13.8L17.8 20.8L12 17.2L6.2 20.8L7.8 13.8L2.5 9.1L9.6 8.6L12 2Z" fill="#F4A261" stroke="#FFE8A3" stroke-width="1"/>
+          </svg>
+          <span class="brand-text">THU UYÊN • STARRY NIGHT</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">The Constellation</a></li>
+          <li><a href="#about">The Core</a></li>
+          <li><a href="#experience">The Nebula</a></li>
+          <li><a href="#skills">The Zodiac</a></li>
+          <li><a href="#contact">Cosmic Signal</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="sound-toggle-btn" class="sound-toggle-btn" title="Bật âm hưởng vũ trụ" aria-label="Toggle Sound">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <line x1="23" y1="9" x2="17" y2="15"></line>
+              <line x1="17" y1="9" x2="23" y2="15"></line>
+            </svg>
+          </button>
+          <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ================= SECTION 1: HERO (THE CONSTELLATION) ================= -->
+      <section id="hero">
+        <div class="hero-grid">
+          
+          <!-- Text Content -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span>ORBIT: FTU • HANOI • 2026</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="author-name">Nguyễn Thu Uyên</span>
+              Crafting Digital Stories Under the Stars
+            </h1>
+
+            <p class="hero-subtitle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#48CAE4" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+              <span>Sinh viên năm 2 • Chuyên ngành Tiêu chuẩn Kinh tế quốc tế</span>
+            </p>
+
+            <p class="hero-description">
+              Học tập tại <strong>Trường Đại học Ngoại thương (FTU)</strong>. Một tâm hồn đam mê nghệ thuật thị giác và tư duy kinh tế logic, vươn mình như ngọn cây bách giữa bầu trời đêm lộng lẫy và không ngừng tìm kiếm quỹ đạo sáng ngời cho riêng mình.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#about" class="btn-primary-orbit">
+                <span>Khám phá quỹ đạo</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="#contact" class="btn-secondary-orbit">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Gửi tín hiệu</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Celestial Artwork (Glowing Crescent Moon & Cypress Frame) -->
+          <div class="hero-visual-col">
+            <div class="celestial-artwork-frame">
+              <!-- Animated Crescent Moon -->
+              <div class="moon-concentric-aura outer"></div>
+              <div class="moon-concentric-aura"></div>
+              <div class="crescent-moon-glow"></div>
+
+              <!-- Cypress Silhouette Motif -->
+              <svg class="cypress-silhouette-hero" viewBox="0 0 160 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M78 10C78 10 95 65 102 110C108 145 125 180 128 220C132 265 145 300 150 380H10C15 300 28 265 32 220C35 180 52 145 58 110C65 65 78 10 78 10Z" fill="#0B132B" opacity="0.95"/>
+                <path d="M78 20C78 20 90 70 96 115C102 150 115 185 118 225C122 270 132 305 136 380H24C28 305 38 270 42 225C45 185 58 150 64 115C70 70 78 20 78 20Z" fill="#1D2D44"/>
+                <path d="M78 35C78 35 88 80 92 120C96 155 106 190 108 230C111 275 118 310 120 380H40C42 310 49 275 52 230C54 190 64 155 68 120C72 80 78 35 78 35Z" fill="#1C2541"/>
+              </svg>
+
+              <!-- Constellation nodes overlay inside frame -->
+              <div class="orbiting-tag tag-top-left">
+                <span style="color: #F4A261;">★</span>
+                <span>FTU Economics</span>
+              </div>
+
+              <div class="orbiting-tag tag-bottom-right">
+                <span style="color: #48CAE4;">✦</span>
+                <span>Starry Night Vibe</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a href="#about" class="scroll-indicator">
+          <span>CUỘN ĐỂ KHÁM PHÁ</span>
+          <div class="scroll-mouse-icon">
+            <div class="scroll-wheel"></div>
+          </div>
+        </a>
+      </section>
+
+      <!-- ================= SECTION 2: ABOUT ME (THE CORE OF THE STAR) ================= -->
+      <section id="about">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <span>Section 02 // The Core of the Star</span>
+        </div>
+
+        <h2 class="section-title">
+          Bản Lĩnh Vươn Cao Như <span class="gradient-text">Cây Bách Giữa Trời Đêm</span>
+        </h2>
+        <p class="section-sub">
+          Lấy cảm hứng từ bóng cây bách vươn thẳng đứng trong tác phẩm của Van Gogh — biểu tượng của sức sống kiên cường, cắm rễ sâu vào nền tảng tri thức và không ngừng vươn tới vũ trụ bao la.
+        </p>
+
+        <div class="about-container">
+          
+          <!-- Cypress Artwork & Reflection Card -->
+          <div class="cypress-symbolism-card">
+            <div class="cypress-svg-container">
+              <svg viewBox="0 0 200 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="cypressGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#48CAE4" stop-opacity="0.8"/>
+                    <stop offset="50%" stop-color="#1D2D44"/>
+                    <stop offset="100%" stop-color="#0B132B"/>
+                  </linearGradient>
+                </defs>
+                <!-- Stylized neo-impressionist cypress brush branches -->
+                <path d="M100 15 C100 15, 120 70, 130 110 C140 150, 155 190, 160 230 C165 270, 175 310, 180 340 H20 C25 310, 35 270, 40 230 C45 190, 60 150, 70 110 C80 70, 100 15, 100 15 Z" fill="url(#cypressGrad)"/>
+                <path d="M100 40 Q115 100 120 160 Q125 220 135 340 Q65 340 75 220 Q85 160 100 40 Z" fill="#070B19" opacity="0.6"/>
+                <circle cx="100" cy="18" r="4" fill="#FFE8A3" filter="drop-shadow(0 0 8px #F4A261)"/>
+                <circle cx="130" cy="120" r="2.5" fill="#FFE8A3"/>
+                <circle cx="70" cy="150" r="2" fill="#48CAE4"/>
+              </svg>
+            </div>
+            <div class="cypress-caption">"The Cypress & The Starlight"</div>
+            <div class="cypress-subtext">Cây bách đại diện cho cốt lõi vững vàng, không chao đảo trước những thử thách học thuật và hành trình tự hoàn thiện bản thân.</div>
+          </div>
+
+          <!-- Narrative and Academic Achievements -->
+          <div class="about-narrative">
+            <div class="star-quote-box">
+              <span class="quote-decor-mark">“</span>
+              <p class="star-quote-text">
+                "Là một vì sao từng vô cùng lấp lánh thời cấp 3, khi trở thành sinh viên trường Đại học Ngoại thương, thật khó để nổi bật giữa vô vàn những vì sao sáng hơn, nhưng mình mong vẫn sẽ giữ được ánh sáng của mình."
+              </p>
+              <span class="star-quote-author">— Nguyễn Thu Uyên</span>
+            </div>
+
+            <p class="about-details-text">
+              Trong vũ trụ rộng lớn tại Ngoại thương, mỗi sinh viên đều là một thiên thể mang trường năng lượng riêng biệt. Đối với Thu Uyên, sự kiên trì, thái độ ham học hỏi và kỷ luật tự giác chính là nguồn nhiên liệu giúp ánh sáng nội tại luôn được duy trì và tỏa rạng theo cách chân thực nhất.
+            </p>
+
+            <!-- Stats Cards Grid -->
+            <div class="stats-cards-grid">
+              
+              <div class="stat-item">
+                <span class="stat-icon">🌟</span>
+                <div class="stat-number">3.66 <span style="font-size: 1rem; color: var(--text-muted);">/4.00</span></div>
+                <div class="stat-label">GPA Năm Nhất</div>
+                <div class="stat-sub">Đại học Ngoại thương (FTU)</div>
+              </div>
+
+              <div class="stat-item">
+                <span class="stat-icon">📐</span>
+                <div class="stat-number">9.5 <span style="color: var(--starry-gold);">•</span> 9.75</div>
+                <div class="stat-label">Điểm THPT 2025</div>
+                <div class="stat-sub">Toán học 9.5 • Hóa học 9.75</div>
+              </div>
+
+              <div class="stat-item">
+                <span class="stat-icon">🥉</span>
+                <div class="stat-number">Giải Ba</div>
+                <div class="stat-label">HSG Hoá Học Lớp 9</div>
+                <div class="stat-sub">Cấp Tỉnh Nam Định</div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= SECTION 3: PORTFOLIO EXPERIENCE (THE NEBULA GALLERY) ================= -->
+      <section id="experience">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path></svg>
+          <span>Section 03 // The Nebula Gallery</span>
+        </div>
+
+        <h2 class="section-title">
+          Hành Trình <span class="gradient-text">Kiến Tạo Dấu Ấn</span>
+        </h2>
+        <p class="section-sub">
+          Mỗi trải nghiệm được ví như một tinh vân (nebula) rực rỡ — nơi các hạt bụi tri thức và ý tưởng va chạm, ngưng tụ để hình thành nên những ngôi sao kinh nghiệm mới.
+        </p>
+
+        <div class="nebula-cards-wrapper">
+          
+          <!-- Experience Card 1: FTU Website Project -->
+          <div class="experience-card card-ftu-project">
+            <div>
+              <div class="exp-header">
+                <span class="exp-badge">
+                  <span style="color: #F4A261;">●</span> DỰ ÁN NGHIÊN CỨU & PHÁT TRIỂN
+                </span>
+                <span class="exp-cluster-id">NEBULA_CLUSTER_01</span>
+              </div>
+
+              <h3 class="exp-title">
+                Website Hỗ Trợ Sinh Viên FTU Tích Luỹ Điểm Rèn Luyện
+              </h3>
+
+              <div class="exp-role">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>Thành viên nhóm dự án nghiên cứu & phát triển</span>
+              </div>
+
+              <p class="exp-description">
+                Đóng góp vào việc khảo sát hành vi người dùng, cấu trúc luồng thông tin và định hình các tính năng cốt lõi giúp sinh viên FTU dễ dàng theo dõi, tính toán và tối ưu hóa lộ trình tích lũy điểm rèn luyện hàng kỳ.
+              </p>
+
+              <ul class="exp-highlights">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Khảo sát nhu cầu và giải quyết điểm nghẽn (pain points) của sinh viên trường Ngoại thương khi ghi nhận minh chứng.</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Phối hợp xây dựng tài liệu đặc tả yêu cầu, tối ưu hóa giao diện người dùng thân thiện, trực quan.</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Thực hiện kiểm thử người dùng (user testing), thu thập phản hồi và cải tiến quy trình tích điểm.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-tags">
+              <span class="exp-pill">FTU Student Portal</span>
+              <span class="exp-pill">Research & Analysis</span>
+              <span class="exp-pill">UI/UX Mindset</span>
+              <span class="exp-pill">Team Collaboration</span>
+            </div>
+          </div>
+
+          <!-- Experience Card 2: Tutoring Experience -->
+          <div class="experience-card card-tutor">
+            <div>
+              <div class="exp-header">
+                <span class="exp-badge">
+                  <span style="color: #48CAE4;">●</span> TRUYỀN CẢM HỨNG HỌC THUẬT
+                </span>
+                <span class="exp-cluster-id">NEBULA_CLUSTER_02</span>
+              </div>
+
+              <h3 class="exp-title">
+                Gia Sư Cho Học Sinh THCS & THPT
+              </h3>
+
+              <div class="exp-role">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <span>Gia sư chuyên môn Toán học & Hóa học</span>
+              </div>
+
+              <p class="exp-description">
+                Đồng hành và dẫn dắt học sinh trong các giai đoạn quan trọng của quá trình học tập, xây dựng phương pháp tiếp cận các môn tự nhiên mạch lạc, dễ hiểu và thắp lên niềm đam mê khám phá kiến thức.
+              </p>
+
+              <ul class="exp-highlights">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Thiết kế giáo án cá nhân hóa theo năng lực từng học sinh, củng cố nền tảng Toán 9.5 & Hóa 9.75.</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Rèn luyện tính kiên nhẫn, khả năng lắng nghe và nghệ thuật truyền đạt các khái niệm trừu tượng.</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Theo sát tiến độ học tập, hỗ trợ tinh thần giúp học sinh vượt qua áp lực thi cử chuyển cấp.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="exp-tags">
+              <span class="exp-pill">Toán & Hoá học</span>
+              <span class="exp-pill">Kỹ năng sư phạm</span>
+              <span class="exp-pill">Tư duy phản biện</span>
+              <span class="exp-pill">Kiên nhẫn & Thấu cảm</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= SECTION 4: SKILLS & EXPERTISE (THE ZODIAC CHART) ================= -->
+      <section id="skills">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          <span>Section 04 // The Zodiac Chart</span>
+        </div>
+
+        <h2 class="section-title">
+          Mạng Lưới Kỹ Năng <span class="gradient-text">Các Chòm Sao Hội Tụ</span>
+        </h2>
+        <p class="section-sub">
+          Trực quan hóa năng lực theo mô hình đồ thị chòm sao (Constellation Node Graph) — các kỹ năng liên kết với nhau bằng những đường tơ ánh sáng chuyển động.
+        </p>
+
+        <div class="zodiac-layout">
+          
+          <!-- Interactive Canvas Constellation Graph -->
+          <div class="constellation-graph-box">
+            <div class="graph-header">
+              <span class="graph-status">
+                <span class="pulse-dot"></span>
+                <span>CHART FREQ: 580 THz • INTERACTIVE NODES</span>
+              </span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--starry-gold);">CONSTELLATION_V2.6</span>
+            </div>
+
+            <canvas id="constellation-canvas" class="canvas-constellation"></canvas>
+
+            <div class="graph-instruction">
+              Di chuột lên các ngôi sao để kích hoạt trường hào quang liên kết
+            </div>
+          </div>
+
+          <!-- Zodiac Clusters Classification -->
+          <div class="zodiac-clusters-panel">
+            
+            <!-- Cluster 1: Frontend / Design (Gold) -->
+            <div class="cluster-card cluster-gold">
+              <div class="cluster-title-wrap">
+                <div class="cluster-symbol">✨</div>
+                <div>
+                  <h4 class="cluster-name">Frontend / Design</h4>
+                  <span class="cluster-sub">Chòm sao sáng sắc vàng mật ong</span>
+                </div>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                Khả năng cảm thụ thẩm mỹ giao diện, nhạy bén với bố cục trực quan, màu sắc và trải nghiệm tương tác mang chiều sâu nghệ thuật.
+              </p>
+              <div class="cluster-items">
+                <span class="skill-tag"><span class="skill-dot"></span> UI/UX Aesthetic</span>
+                <span class="skill-tag"><span class="skill-dot"></span> Web Interface Mindset</span>
+                <span class="skill-tag"><span class="skill-dot"></span> Creative Presentation</span>
+              </div>
+            </div>
+
+            <!-- Cluster 2: Backend / Architecture (Deep Blue) -->
+            <div class="cluster-card cluster-blue">
+              <div class="cluster-title-wrap">
+                <div class="cluster-symbol">🌌</div>
+                <div>
+                  <h4 class="cluster-name">Backend / Architecture</h4>
+                  <span class="cluster-sub">Chòm sao xanh lam đậm vững chãi</span>
+                </div>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                Tư duy logic cấu trúc hệ thống, nghiên cứu quy trình vận hành và xử lý dữ liệu chặt chẽ từ nền tảng Tiêu chuẩn Kinh tế quốc tế.
+              </p>
+              <div class="cluster-items">
+                <span class="skill-tag"><span class="skill-dot"></span> System Logic</span>
+                <span class="skill-tag"><span class="skill-dot"></span> Data Processing</span>
+                <span class="skill-tag"><span class="skill-dot"></span> Project Research</span>
+              </div>
+            </div>
+
+            <!-- Cluster 3: Tools & Soft Skills (Stardust Lavender) -->
+            <div class="cluster-card cluster-dust">
+              <div class="cluster-title-wrap">
+                <div class="cluster-symbol">🪐</div>
+                <div>
+                  <h4 class="cluster-name">Tools & Soft Skills</h4>
+                  <span class="cluster-sub">Bụi sao lấp lánh bao quanh</span>
+                </div>
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                Nền tảng kỹ năng thiết yếu trong môi trường đại học và hội nhập quốc tế, đảm bảo hiệu suất làm việc bền bỉ và thích ứng nhanh.
+              </p>
+              <div class="cluster-items">
+                <span class="skill-tag"><span class="skill-dot"></span> Tiếng Anh cơ bản</span>
+                <span class="skill-tag"><span class="skill-dot"></span> Tin học văn phòng cơ bản</span>
+                <span class="skill-tag"><span class="skill-dot"></span> Giải quyết vấn đề</span>
+                <span class="skill-tag"><span class="skill-dot"></span> Quản lý thời gian</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= SECTION 5: CONTACT & FOOTER (SEND A SIGNAL INTO THE COSMOS) ================= -->
+      <section id="contact">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>Section 05 // Send a Signal into the Cosmos</span>
+        </div>
+
+        <h2 class="section-title">
+          Kết Nối <span class="gradient-text">Qua Không Gian Vũ Trụ</span>
+        </h2>
+        <p class="section-sub">
+          Dù bạn ở bất kỳ tọa độ nào, một tín hiệu phát đi vào vũ trụ sẽ luôn được lắng nghe. Hãy cùng trao đổi về các cơ hội hợp tác, dự án hoặc đơn giản là một lời chào.
+        </p>
+
+        <div class="observatory-wrapper">
+          <!-- Observatory Corner Reticles -->
+          <div class="reticle-corner reticle-tl"></div>
+          <div class="reticle-corner reticle-tr"></div>
+          <div class="reticle-corner reticle-bl"></div>
+          <div class="reticle-corner reticle-br"></div>
+
+          <div class="observatory-reticle">
+            <span>OBSERVATORY RADAR // ACTIVE</span>
+            <span>FREQ: 1420.405 MHz (HYDROGEN LINE)</span>
+            <span>STATUS: READY FOR TRANSMISSION</span>
+          </div>
+
+          <!-- Contact Channels List -->
+          <div class="contact-info-col">
+            <div class="contact-heading-area">
+              <h3 style="font-family: var(--font-artistic); font-size: 1.8rem; color: #FFFFFF; margin-bottom: 0.5rem;">
+                Bảng Điều Khiển Thiên Văn
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                Các kênh viễn thông chính xác trực tiếp kết nối với Nguyễn Thu Uyên:
+              </p>
+            </div>
+
+            <div class="contact-direct-list">
+              
+              <!-- Phone -->
+              <div class="contact-item-card">
+                <div class="item-left">
+                  <div class="item-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div class="item-texts">
+                    <div class="item-type">Số Điện Thoại</div>
+                    <a href="tel:0345486934" class="item-value">0345 486 934</a>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="0345486934" title="Sao chép số điện thoại">
+                  <span>Sao chép</span>
+                </button>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-item-card">
+                <div class="item-left">
+                  <div class="item-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="item-texts">
+                    <div class="item-type">Hòm Thư Điện Tử</div>
+                    <a href="mailto:thuuyen120207@gmai.com" class="item-value">thuuyen120207@gmai.com</a>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="thuuyen120207@gmai.com" title="Sao chép email">
+                  <span>Sao chép</span>
+                </button>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-item-card">
+                <div class="item-left">
+                  <div class="item-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </div>
+                  <div class="item-texts">
+                    <div class="item-type">Tài Khoản GitHub</div>
+                    <a href="https://github.com/thuuyen120207-commits" target="_blank" rel="noopener noreferrer" class="item-value">thuuyen120207-commits</a>
+                  </div>
+                </div>
+                <a href="https://github.com/thuuyen120207-commits" target="_blank" rel="noopener noreferrer" class="link-arrow-btn">
+                  <span>Mở GitHub</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              </div>
+
+            </div>
+
+            <!-- Social channels -->
+            <div class="social-channel-row">
+              <a href="https://github.com/thuuyen120207-commits" target="_blank" rel="noopener noreferrer" class="social-circle-btn" title="GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="mailto:thuuyen120207@gmai.com" class="social-circle-btn" title="Send Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+              <a href="tel:0345486934" class="social-circle-btn" title="Direct Call">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Observatory Terminal Form -->
+          <div class="observatory-form-col">
+            <div class="terminal-top-bar">
+              <div class="terminal-dots">
+                <span class="terminal-dot td-red"></span>
+                <span class="terminal-dot td-yellow"></span>
+                <span class="terminal-dot td-green"></span>
+              </div>
+              <span>COSMIC TRANSMITTER TERMINAL // ENCRYPTED</span>
+            </div>
+
+            <form id="observatory-form">
+              <div class="form-group">
+                <label for="obs-name">
+                  <span>✦</span> DANH TÍNH CỦA BẠN (TÊN):
+                </label>
+                <input type="text" id="obs-name" class="form-input" placeholder="Ví dụ: Nguyễn Văn A" required>
+              </div>
+
+              <div class="form-group">
+                <label for="obs-email">
+                  <span>✦</span> ĐỊA CHỈ PHẢN HỒI (EMAIL):
+                </label>
+                <input type="email" id="obs-email" class="form-input" placeholder="email_cua_ban@domain.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="obs-message">
+                  <span>✦</span> NỘI DUNG TÍN HIỆU:
+                </label>
+                <textarea id="obs-message" class="form-textarea" placeholder="Nhập lời nhắn, ý tưởng dự án hoặc thông điệp gửi tới Thu Uyên..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-transmit">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Phát Tín Hiệu Vào Vũ Trụ (Send Signal)</span>
+              </button>
+
+              <div id="transmit-status" class="transmit-status"></div>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="cosmic-footer">
+      <div class="footer-inner">
+        
+        <!-- Vincent van Gogh Quote -->
+        <div class="van-gogh-quote-card">
+          <p class="footer-quote-text">
+            "For my part I know nothing with any certainty, but the sight of the stars makes me dream."
+          </p>
+          <div class="footer-quote-author">
+            — VINCENT VAN GOGH
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <div>
+            © 2026 <strong>Nguyễn Thu Uyên</strong>. All rights reserved.
+          </div>
+          <div>
+            Chuyên ngành Tiêu chuẩn Kinh tế quốc tế • <a href="https://www.ftu.edu.vn" target="_blank" rel="noopener noreferrer">Đại học Ngoại thương (FTU)</a>
+          </div>
+          <div>
+            Crafted with Starry Night Cosmic Aesthetics
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Cosmic Transmission Confirmation Modal -->
+  <div id="cosmic-modal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-icon-glow">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 2L14.4 8.6L21.5 9.1L16.2 13.8L17.8 20.8L12 17.2L6.2 20.8L7.8 13.8L2.5 9.1L9.6 8.6L12 2Z"></path>
+        </svg>
+      </div>
+      <h3 class="modal-title">Tín Hiệu Đã Được Truyền Đi!</h3>
+      <p class="modal-body">
+        Thông điệp của bạn đã được mã hóa và truyền đi qua không gian vô tận. Thu Uyên sẽ phản hồi lại tần số vô tuyến của bạn trong thời gian sớm nhất!
+      </p>
+      <button id="btn-close-modal" class="btn-close-modal">Trở lại Bầu Trời Đêm</button>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="main.js"></script>
+</body>
+</html>
